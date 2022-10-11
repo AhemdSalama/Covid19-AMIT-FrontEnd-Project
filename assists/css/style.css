@@ -1,0 +1,330 @@
+:root{
+    --text-primary: #50648f;
+    --text-secondary : #3b4c6b;
+    --text-blue:#1f80ec;
+    --text-red : #fc655a;
+
+}
+
+.color-primary{
+    color: var(--text-primary);
+}
+.color-red{
+    color: var(--text-red);
+}
+.color-secondary{
+    color: var(--text-secondary);
+}
+.color-blue{
+    color: var(--text-blue);
+}
+.b-700{
+    font-weight: 700!important;
+}
+.b-900{
+    font-weight: 900!important;
+}
+ffamily1{
+    font-family: mainFont2;
+}
+@font-face {
+    font-family: CoreSansBlod;
+    src: url(../fonts/CoreSansD55Bold.otf);
+    font-weight: 900;
+}
+
+@font-face{
+    font-family: mainFont1;
+    src : url(../fonts/Alternate_Gothic/AlternateGotNo1D.ttf);
+}
+@font-face{
+    font-family: mainFont2;
+    src : url(../fonts/Alternate_Gothic/AlternateGotNo2D.ttf);
+}
+@font-face{
+    font-family: mainFont3;
+    src : url(../fonts/Alternate_Gothic/AlternateGotNo3D.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Fredoka One', cursive;
+ */
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    background-color: var(--text-blue);
+    border-radius: 60px !important;
+    padding: 10px 25px;
+    font-weight: 700 !important;
+    border:none;
+}
+.btn:hover{
+    background-color: var(--text-secondary);
+}
+section{
+    padding: 100px 0;
+}
+section:nth-child(even){
+    background-color: #f7f9fd;
+}
+p{
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 500 !important;
+    color: var(--text-secondary);
+    font-size: 1rem !important;
+}
+/* ===================== Navbar ===================== */
+nav{
+    padding:0 !important;
+    z-index: 10;
+}
+nav .logo{
+    font-weight: 900 !important;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+nav .logo .logo-icon{
+    color: var(--text-red);
+    margin:0 1px 0 0;
+}
+nav .logo .logo-text{
+    color: var(--text-secondary);
+}
+nav .logo .logo-number{
+    color: var(--text-primary);
+}
+nav .navbar-collapse {
+    height: 100% !important;
+
+}
+
+nav ul.navbar-nav {
+    margin-right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+nav ul.navbar-nav .nav-item{
+    /* padding:5px 15px; */
+    margin: 0 4px;
+
+}
+nav ul.navbar-nav .nav-item a{
+    font-weight: 700 !important;
+    font-size: 1rem;
+    text-transform: capitalize;
+    flex-wrap: nowrap;
+
+    color: var(--text-primary);
+    padding:20px 15px;
+    transition: ease-in 0.2s ;
+ 
+}
+
+nav ul.navbar-nav .nav-item a.active,
+nav ul.navbar-nav .nav-item a:hover{
+    color: var(--text-red);
+    border-bottom: 4px solid var(--text-red);
+}
+
+/* ===================== banner ===================== */
+#banner{
+    background: url('../images/shape-a.png') #f7f9fd;
+}
+#banner .container > .row{
+    align-items: center;
+}
+#banner .header-container .header-text .text-left{
+    font-weight: 900 !important;
+    color: var(--text-primary);
+    font-family: mainFont2;
+    font-size: 7.6rem;
+    padding: 0;
+}
+#banner .header-container .header-text .text-right{
+    font-family: mainFont2;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 0;
+    flex-direction: column;
+}
+#banner .header-container .header-text .text-right .text-top{
+    color: var(--text-red) !important;
+}
+#banner .header-container .header-text .text-right .text-top{
+    color: var(--text-primary);
+}
+#banner .header-container-text p{
+    text-align: justify;
+    margin:1.8rem 0;
+}
+#banner .header-container-buttons .btn{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+#banner .header-container-buttons .btn i{
+    padding-left: 5px;
+}
+#banner .header-container-buttons .link{
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+    transition: 0.2s ease all;
+}
+#banner .header-container-buttons .link:hover{
+    color:var(--text-red)
+}
+#banner .header-container-buttons .link:hover i{
+    transform: translateX(5px) scale(1.1);
+}
+#banner .header-container-buttons .link i{
+    padding-left: 8px;
+}
+
+#banner .rate{
+    margin: 50px 0 20px 0;
+    justify-content: start;
+}
+#banner .rate .col-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+#banner .rate h4{
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    opacity: 0.8;
+}
+#banner .rate p{
+    font-weight: 900 !important;
+    font-size: 1.7rem !important; 
+    color: var(--text-secondary);
+}
+#banner .last-update p{
+    color: var(--text-secondary);
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 0.9rem !important;
+}
+
+
+/* about  */
+#about .content-left h4{
+    font-weight: 700!important;
+}
+#about .content-left h1{
+    font-family: mainFont2;
+    font-size: 4rem;
+    font-weight: 900 !important;
+    color: var(--text-primary);
+    padding: 15px 0;
+}
+#about .content-left p{
+    width: 75%;
+    color: var(--text-secondary);
+    font-size: 1.2rem !important;
+    font-weight: 600;
+}
+
+#about .content-right li{
+    padding: 0;
+}
+#about .content-right li:first-child{
+    padding: 20px;
+    text-align: left;
+    background-color: transparent !important;
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+    color: var(--text-secondary) !important;
+}
+#about .content-right li > a{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-blue);
+}
+#about .content-right li > a:hover{
+    background-color: var(--text-secondary);
+    color: white;
+}
+
+/* covid-spreed */
+/* .covid-spreed p{
+    font-size: 1.2rem;
+    opacity: 0.8;
+    font-weight: 600;
+} */
+.covid-spreed .cards-row{
+    display: flex;
+    gap: 40px;
+}
+.covid-spreed .card{
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.covid-spreed .card-img-top{
+    border-bottom: 10px solid var(--text-red);
+}
+.covid-spreed .card-body{
+    padding: 30px 20px;
+}
+.covid-spreed .card-body h4{
+    font-size: 1.6rem;
+}
+.covid-spreed .card-body p{
+    font-size: 1.2rem !important;
+    padding: 15px 0;
+}
+
+/* symptoms */
+.symptoms .symptoms-h4{
+    letter-spacing: 3px;
+}
+.symptoms div .section-p,
+.covid-spreed .section-p{
+    width: 65% !important;
+    font-size: 1.2rem !important;
+    margin-top: 20px;
+    opacity: 0.8;
+    color: var(--text-secondary);
+}
+.symptoms .cards-row .card{
+    position: relative;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.symptoms .cards-row{
+    gap: 40px;
+}
+.symptoms .cards-row .card .card-img-top{
+    position: absolute;
+    top:-50px;
+    right: 20px;
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+    box-shadow: rgba(76, 169, 187, 0.35) 0px 5px 15px;
+}
+.symptoms .cards-row .card .card-body h4{
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+}
+.symptoms .cards-row .card .card-body p{
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+}
