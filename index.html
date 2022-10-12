@@ -23,6 +23,11 @@
 </head>
 
 <body>
+
+    <!-- ========================================Scroll to the top ======================================== -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up" onclick="scrollToTop()"></i>
+    </div>
     <!-- ======================================== Navbar ======================================== -->
     <!-- logo - ul - button  -->
     <nav class="navbar navbar-expand-lg bg-light position-fixed w-100">
@@ -40,30 +45,30 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active banner" aria-current="page" href="#banner">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Crona</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Symptoms</a>
+                        <a class="nav-link about" href="#about">About Crona</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Prevention</a>
+                        <a class="nav-link symptoms" href="#symptoms">Symptoms</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">treatment</a>
+                        <a class="nav-link prevention">Prevention</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">Faq</a>
+                        <a class="nav-link treatment" href="#">treatment</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link text-uppercase faq" href="#">Faq</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link news" href="#">News</a>
                     </li>
 
                     <li class="list-item">
@@ -75,7 +80,7 @@
         </div>
     </nav>
     <!-- ======================================== banner ======================================== -->
-    <section class="banner" id="banner">
+    <section class="banner section-color" id="banner">
         <div class="container align-items-center d-flex h-100">
             <div class="row ">
                 <div class="col-lg-5 header-container">
@@ -192,7 +197,7 @@
         </div>
     </section>
     <!-- ======================================== about crona ===================================-->
-    <section id="covid-spreed" class="covid-spreed">
+    <div id="covid-spreed" class="covid-spreed section-color">
         <div class="container">
             <div class="row">
                 <h4 class="text-uppercase color-blue b-700 text-center">
@@ -233,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row button-row mt-5">
+                <div class="row button-row mt-5 pt-5">
                     <div class="d-flex justify-content-center b-700">
                         <button class="btn btn-primary">
                             <i class="fa-regular fa-circle-question"></i> Have question about spreeding ?
@@ -242,7 +247,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- ======================================== about crona ===================================-->
     <section id="symptoms" class="symptoms">
         <div class="container">
@@ -266,7 +271,8 @@
                         <img class="card-img-top" src="assists/images/symptom-a.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="color-blue b-700">Fever</h4>
-                            <p class="card-text"><b>High Fever</b> - this means you feel hot to touch on your chest or back (you do not
+                            <p class="card-text"><b>High Fever</b> - this means you feel hot to touch on your chest or
+                                back (you do not
                                 need to measure your temperature). It is a common sign and also may appear in 2-10 days
                                 if you affected.</p>
                         </div>
@@ -275,7 +281,8 @@
                         <img class="card-img-top" src="assists/images/symptom-b.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="color-blue b-700">Cough</h4>
-                            <p class="card-text"><b>Continuous cough</b> - this means coughing a lot for more than an hour, or 3 or more coughing
+                            <p class="card-text"><b>Continuous cough</b> - this means coughing a lot for more than an
+                                hour, or 3 or more coughing
                                 episodes in 24 hours (if you usually have a cough, it may be worse than usual).</p>
                         </div>
                     </div>
@@ -283,30 +290,573 @@
                         <img class="card-img-top" src="assists/images/symptom-c.png" alt="Card image cap">
                         <div class="card-body">
                             <h4 class="color-blue b-700">Shortness of breath</h4>
-                            <p class="card-text"><b>Difficulty breathing</b> - Around 1 out of every 6 people who gets COVID19 becomes seriously ill
+                            <p class="card-text"><b>Difficulty breathing</b> - Around 1 out of every 6 people who gets
+                                COVID19 becomes seriously ill
                                 and develops difficulty breathing or shortness of breath</p>
                         </div>
                     </div>
                 </div>
-                <div class="row button-row mt-5">
-                    <div class="d-flex justify-content-center b-700">
-                        <button class="btn btn-primary">
-                            <i class="fa-regular fa-circle-question"></i> Have question about spreeding ?
-                        </button>
+                <div class="row button-row ">
+                    <div class="col-7 d-flex align-items-start symptoms-warning">
+                        <i class="fa-solid fa-triangle-exclamation color-blue mx-3"></i>
+                        <p><b class="color-blue">Stay at home and call your doctor: </b>
+                            If you think you have been exposed to COVID-19 and develop a fever and any symptoms, such as
+                            cough or difficulty breathing, call your healthcare provider as soon as possible for medical
+                            advice.</p>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center b-700  symptoms-warning-button">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-primary">
+                                <i class="fa-regular fa-circle-question"></i> Have question? Find answer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== Prevention ======================================== -->
+    <section id="prevention" class="prevention section-color">
+        <div class="container">
+            <div class="row">
+                <h4 class="text-uppercase color-blue b-700 text-center prevention-h4">
+                    HOW TO PROTECT YOURSELF?
+                </h4>
+                <h1 class="text-uppercase color-primary text-center b-900 ffamily1 mt-2 mb-4">
+                    PREVENTION & ADVICE
+                </h1>
+                <div class="text-center color-secondary mb-5 d-flex justify-content-center">
+                    <p class="section-p">
+                        There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). <b>The best way to
+                            prevent illness is to avoid being exposed to this virus.</b> Stay aware of the latest
+                        information on
+                        the COVID-19 outbreak, available on the WHO website and through your national and local
+                        public health authority
+                    </p>
+                </div>
+                <div class="row cards-row">
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/advice-a.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">Wash your hands frequently</h4>
+                            <p class="card-text text-center">Regularly and thoroughly clean your hands with an
+                                alcohol-based hand rub or
+                                wash them with soap and water for at least 20 seconds.</p>
+                        </div>
+                    </div>
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/advice-b.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">Maintain social distancing</h4>
+                            <p class="card-text text-center">Maintain at least 1 metre (3
+                                feet) distance between yourself & anyone who is coughing or sneezing. If you are too
+                                close, get chance to
+                                infected.</p>
+                        </div>
+                    </div>
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/advice-c.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">Avoid touching face</h4>
+                            <p class="card-text text-center">Hands touch many surfaces and can pick up viruses. So,
+                                hands can transfer the virus to your eyes, nose or mouth and
+                                can make you sick.</p>
+                        </div>
+                    </div>
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/advice-d.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">Practice respiratory hygiene</h4>
+                            <p class="card-text text-center">Maintain good respiratory hygiene as covering your mouth &
+                                nose with your bent elbow or tissue when cough or
+                                sneeze.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row prevention-buttons d-flex align-items-center my-5 py-5">
+                    <div class="col-6 justify-content-end d-flex align-items-center prevention-button">
+                        <a href="#" class="btn btn-primary">Check how you wash hand <i
+                                class="fa-sharp fa-solid fa-shield-halved"></i>
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-start align-items-center prevention-link">
+                        <a href="#" class="text-decoration-none link">Q&A on Coronavirus <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================================== Protext Steps ======================================== -->
+
+            <div class="row protect-steps">
+                <div class="col-8 content">
+                    <h2 class="color-secondary b-700 my-5">Take steps to protect others</h2>
+                    <div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Stay home if you're sick </b>- Stay home if you are
+                                sick, except to get medical care.</p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Cover your mouth and nose </b>- with a tissue when
+                                you cough or sneeze (throw used tissues
+                                in the trash) or use the inside of your elbow.</p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Wear a facemask if you are -</b>- You should wear a
+                                facemask when you are around other
+                                people (e.g., sharing a room or vehicle) and before you enter a healthcare provider's
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Clean AND disinfect frequently touched surfaces
+                                    daily </b>- This includes phones, tables, light switches, doorknobs, countertops,
+                                handles, desks, toilets, faucets, and sinks.</p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Clean the dirty surfaces </b>Clean the dirty
+                                surfaces </p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Stay informed about the local COVID-19 situation
+                                </b>- Get up-to-date information about local COVID-19 activity from public health
+                                officials.</p>
+                        </div>
+                        <div class="d-flex align-items-start"><i class="fa-sharp fa-solid fa-circle-check"></i>
+                            <p><b>Dedicated, lined trash can </b>- If possible,
+                                dedicate a lined trash can for the ill person. Use gloves when removing garbage bags,
+                                and handling & disposing of trash.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 img">
+                    <div class="d-flex justify-content-center h-100 align-items-center">
+                        <img src="assists/images/steps.png" class="w-100" alt="Steps image">
+                    </div>
+                </div>
+            </div>
+            <!-- ======================================== Follow Steps ======================================== -->
+
+            <div class="row follow-steps">
+                <h1 class="text-uppercase color-primary text-center b-900 ffamily1 mt-2 mb-4">
+                    Follow steps to wash hands
+                </h1>
+                <div class="d-flex justify-content-center align-items-center follow-steps-link">
+                    <a href="#" class="text-decoration-none link">Why do I need to wash hand <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="row steps">
+                    <div class="step col card">
+                        <img src="assists/images/hand-a.png" alt="hand-a">
+                        <span class="color-secondary b-700">Soup on Hand</span>
+                    </div>
+                    <div class="step col card">
+                        <img src="assists/images/hand-b.png" alt="hand-b">
+                        <span class="color-secondary b-700">Plam on Plam</span>
+                    </div>
+                    <div class="step col card">
+                        <img src="assists/images/hand-c.png" alt="hand-c">
+                        <span class="color-secondary b-700">Between Fingers</span>
+                    </div>
+                    <div class="step col card">
+                        <img src="assists/images/hand-d.png" alt="hand-d">
+                        <span class="color-secondary b-700">Back to Hands</span>
+                    </div>
+                    <div class="step col card">
+                        <img src="assists/images/hand-e.png" alt="hand-e">
+                        <span class="color-secondary b-700">Clean with Water</span>
+                    </div>
+                    <div class="step col card">
+                        <img src="assists/images/hand-f.png" alt="hand-f">
+                        <span class="color-secondary b-700">Focus on Wrist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== Treatment ======================================== -->
+    <section class="treatment" id="treatment">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 content-left">
+                    <h4 class="text-uppercase color-blue b-700 text-left symptoms-h4">
+                        be carefull & stay safe
+                    </h4>
+                    <h1 class="text-uppercase color-primary text-left b-900 ffamily1 mt-2 mb-4">
+                        TREATMENT FOR CORONAVIRUS
+                    </h1>
+                    <div>
+                        <p class="color-secondary"><b class="b-700">To date, there is no vaccine and no specific
+                                antiviral medicine to prevent or treat COVID-2019.</b>However, those affected should
+                            receive care, to relieve symptoms. People with serious illness should be hospitalized, Most
+                            patients recover thanks to supportive care.</p>
+                        <p>
+                            Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the
+                            symptoms while your body fights the illness. You'll need to stay in isolation, away from
+                            other people, until you have recovered.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-5 content-right">
+                    <div class="d-flex flex-column align-items-start card content-right-card">
+                        <h4 class="text-capitalize">Self Care</h4>
+                        <span>If you have mild symptoms, stay at home until you've recovered. You can relieve your
+                            symptoms if you: </span>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-arrow-right"></i> Rest and sleep</li>
+                                <li><i class="fa-solid fa-arrow-right"></i> Keep warm</li>
+                                <li><i class="fa-solid fa-arrow-right"></i> Drink plenty of liquids</li>
+                                <li><i class="fa-solid fa-arrow-right"></i> Use a room humidifier or take a hot shower
+                                    to help ease a sore throat and cough</li>
+                            </ul>
+                        </div>
+                        <h4 class="text-capitalize">Medical Treatments</h4>
+                        <span>
+                            If you develop a fever, cough, and have difficulty breathing, promptly seek medical care.
+                            Call in advance and tell your health provider of any recent travel or recent contact with
+                            travelers.
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== Protect yourself ======================================== -->
+    <div class="protect-yourself section-color" id="protect-yourself">
+        <div class="container">
+            <div class="row">
+                <h4 class="text-uppercase color-blue b-700 text-center symptoms-h4">
+                    DO'S & DON'TS
+                </h4>
+                <h1 class="text-uppercase color-primary text-center b-900 ffamily1 mt-2 mb-4">
+                    PROTECT YOURSELF
+                </h1>
+                <div class="text-center color-secondary mb-5 d-flex justify-content-center">
+                    <p class="section-p">
+                        The best thing you can do now is plan for how you can adapt your daily routine. Take few steps
+                        to protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes,
+                        clean daily used surfaces etc. The best way to prevent illness is to avoid being
+                        exposed to this virus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row protect-yourself-content">
+                <div class="col-3 instructions">
+                    <div class="item">
+                        <span class="text-capitalize">Avoid close contact</span>
+                        <div class="item-img">
+                            <img src="assists/images/donts-a.png" alt="">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="text-capitalize">Don't touch face</span>
+                        <div class="item-img">
+                            <img src="assists/images/donts-b.png" alt="">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="text-capitalize">Social distancing</span>
+                        <div class="item-img">
+                            <img src="assists/images/donts-c.png">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 img">
+                    <img src="assists/images/protect.png" class="w-100" alt="">
+                </div>
+                <div class="col-3 instructions">
+                    <div class="item correct">
+                        <div class="item-img ">
+                            <img src="assists/images/dos-a.png" alt="">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <span class="text-capitalize">wash your hand</span>
+                    </div>
+                    <div class="item correct">
+                        <div class="item-img ">
+                            <img src="assists/images/dos-b.png" alt="">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <span class="text-capitalize">drink much water</span>
+                    </div>
+                    <div class="item correct">
+                        <div class="item-img ">
+                            <img src="assists/images/dos-c.png" alt="">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <span class="text-capitalize">use face mask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="row">
+                <h4 class="text-uppercase color-blue b-700 text-center symptoms-h4">
+                    FREQUENTLY ASKED QUESTIONS
+                </h4>
+                <h1 class="text-uppercase color-primary text-center b-900 ffamily1 mt-2 mb-4">
+                    COMMON QUESTION & ANSWER
+                </h1>
+            </div>
+            <div class="row faq-content">
+                <div class="col-4 list-items">
+                    <div>
+                        <ul class="list-group">
+                            <li class="list-group-item">Coronavirus Disease 2019 Basics <i
+                                    class="fa-solid fa-caret-right"></i></li>
+                            <li class="list-group-item">How It Spreads <i class="fa-solid fa-caret-right"></i></li>
+                            <li class="list-group-item">How to Protect Yourself <i class="fa-solid fa-caret-right"></i>
+                            </li>
+                            <li class="list-group-item">Symptoms & Testing <i class="fa-solid fa-caret-right"></i></li>
+                            <li class="list-group-item">Outbreak in Your Community <i
+                                    class="fa-solid fa-caret-right"></i></li>
+                            <li class="list-group-item">Myth-Busters of coronavirus <i
+                                    class="fa-solid fa-caret-right"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 list-items-content">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="heading6">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse1"
+                                        aria-expanded="false" aria-controls="collapse1">
+                                        What should I do if there is an outbreak in my community?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading6"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading1">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapse2">
+                                        How do I prepare my children in case of COVID-19 outbreak in our community?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse2" class="collapse " aria-labelledby="heading1" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse3"
+                                        aria-expanded="false" aria-controls="collapse3">
+                                        What steps should parents take to protect children during a community outbreak?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse3" class="collapse " aria-labelledby="heading2" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading3">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse4"
+                                        aria-expanded="false" aria-controls="collapse4">
+                                        Will schools be dismissed if there is an outbreak in my community?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse4" class="collapse " aria-labelledby="heading3" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading4">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse5"
+                                        aria-expanded="false" aria-controls="collapse5">
+                                        Can the virus that causes COVID-19 be spread through food, including
+                                        refrigerated or frozen food?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse5" class="collapse " aria-labelledby="heading4" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading5">
+                                <h5 class="mb-0" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                                    aria-controls="collapse6">
+                                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapse6"
+                                        aria-expanded="false" aria-controls="collapse6">
+                                        Should I go to work if there is an outbreak in my community?
+                                    </button>
+                                    <i class="fa-solid fa-plus collapsed" data-toggle="collapse"
+                                        data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"></i>
+                                    <i class="fa-solid fa-minus d-none"></i>
+                                </h5>
+                            </div>
+
+                            <div id="collapse6" class="collapse " aria-labelledby="heading5" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ======================================== News  ======================================== -->
+    <section id="news" class="news section-color">
+        <div class="container">
+            <div class="row">
+                <h4 class="text-uppercase color-blue b-700 text-center symptoms-h4">
+                    Recent From Blog
+                </h4>
+                <h1 class="text-uppercase color-primary text-center b-900 ffamily1 mt-2 mb-4">
+                    Last Update
+                </h1>
+                <div class="cards-row">
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/blog-a.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">Caring for someone at home</h4>
+                            <p class="card-text">Most people who get sick with
+                                COVID-19 will have only mild illness and should recover at home. Care at home can help
+                                stop the
+                                spread of COVID-19.</p>
+                        </div>
+                    </div>
+                    <div class="card col card-bigger" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/blog-b.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">15 ways to keep safe and healthy </h4>
+                            <p>
+                                Most people who get sick with
+                                COVID-19 will have only mild illness and should recover at home. Care at home can help
+                                stop the
+                                spread of COVID-19
+                                .</p>
+                        </div>
+                    </div>
+                    <div class="card col" style="width: 18rem;">
+                        <img class="card-img-top" src="assists/images/blog-c.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="color-secondary b-700">If You Think You Are Sick</h4>
+                            <p class="card-text">If you are sick with COVID-19 or think you might have it, follow the
+                                steps below to help protect other people in your home and
+                                community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- ======================================== Libararies ======================================== 
     -->
     <!-- Bootstrap JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- Font Awesome JS  -->
     <script src="https://kit.fontawesome.com/748660864a.js" crossorigin="anonymous"></script>
-
+    <!-- APP JS  -->
+    <script src="assists/js/app.js"></script>
 </body>
 
 </html>
