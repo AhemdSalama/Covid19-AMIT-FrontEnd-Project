@@ -1010,7 +1010,7 @@ nav ul.navbar-nav .nav-item a:hover {
 }
 
 /* s */
-@media only screen and (min-width:576px) {
+@media only screen and (max-width:768px) {
     .header-container {
         margin-bottom: 40px;
     }
@@ -1019,7 +1019,7 @@ nav ul.navbar-nav .nav-item a:hover {
         width: 100%;
     }
 
-    .covid-spreed .cards-row {
+    /* .covid-spreed .cards-row {
         justify-content: center;
     }
 
@@ -1085,5 +1085,5 @@ nav ul.navbar-nav .nav-item a:hover {
 
     .footer .list-links .item {
         margin-bottom: 25px;
-    }
+    } */
 }
