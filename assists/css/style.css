@@ -760,7 +760,7 @@ nav ul.navbar-nav .nav-item a:hover {
 .news .cards-row {
     margin: 50px 0;
     gap: 25px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -768,8 +768,9 @@ nav ul.navbar-nav .nav-item a:hover {
 .news .cards-row .card {
     border: none;
     width: 75% !important;
-    padding: 30px 20px;
-    gap:10px;
+    padding: 30px 30px;
+    gap: 10px;
+    border-radius: 10px;
 }
 
 /* .card-bigger {
@@ -779,7 +780,110 @@ nav ul.navbar-nav .nav-item a:hover {
 .news .cards-row .card .card-img-top {
     border-radius: 10px;
 }
-.news .cards-row .card .card-body{
+
+.news .cards-row .card .card-body {
     text-align: center;
     padding-bottom: 0;
+}
+
+/* Footer */
+#footer {
+    background: url(../images/shape-a.png) #151c2f;
+    color: #fff !important;
+
+}
+
+.footer .logo {
+    font-size: 3rem !important;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.footer .content {
+    margin-bottom: 20px;
+}
+
+.footer .content p {
+    color: #ccc !important;
+    font-size: 1.1rem !important;
+    font-weight: 500;
+
+}
+
+.footer .social-btn {
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer .social-btn .i-fc {
+    background-color: #355999;
+    color: #fff !important;
+    border-radius: 0px !important;
+}
+
+.footer .social-btn .tw {
+    background-color: #55acee;
+    color: #fff;
+    border-radius: 0px !important;
+
+}
+
+.footer .social-btn .ins {
+    background-color: #e4405f;
+    color: #fff;
+    border-radius: 0px !important;
+}
+
+.list-links {
+    margin: 20px 0;
+}
+
+.list-links .item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.list-links .item .header-text {
+    font-size: 1.4rem !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.list-links .item a {
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.footer .h-line {
+    margin: 25px 0;
+}
+
+.footer .copywrite {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.6) !important;
+
+    font-size: 1.2rem !important;
+    margin-bottom: 25px;
+}
+
+.footer .copywrite a {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer .copywrite .white-text {
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 700;
+}
+
+.footer .copywrite-text {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 25px;
 }
