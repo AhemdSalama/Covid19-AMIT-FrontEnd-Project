@@ -927,12 +927,17 @@ nav ul.navbar-nav .nav-item a:hover {
     display: none;
 }
 
+/* navbar  */
+.btn-toggler {
+    display: none;
+}
+
 /* Responsive */
 /* XL */
 @media only screen and (min-width:1200px) and (max-width:1400px) {}
 
 /* LG */
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:993px) {
     #banner .header-container-buttons .btn {
         padding: 10px 20px;
     }
@@ -944,10 +949,19 @@ nav ul.navbar-nav .nav-item a:hover {
     #banner .rate p {
         font-size: 1.3rem !important;
     }
+
+    nav ul.navbar-nav .nav-item a {
+        padding: 30px 5px !important;
+        font-size: 1rem !important;
+    }
+}
+
+.hideMenu {
+    left: -500px !important;
 }
 
 /* md */
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:993px) {
     .header-container .left {
         justify-content: end !important;
     }
@@ -959,11 +973,117 @@ nav ul.navbar-nav .nav-item a:hover {
     #banner .rate {
         padding: 0 50px;
     }
+
+    .btn-toggler {
+        display: block;
+        font-size: 2rem;
+        border: none;
+        background: transparent;
+    }
+
+    nav.navbar {
+        padding: 15px 0 !important;
+    }
+
+    #navbarSupportedContent {
+        position: fixed;
+        top: 0;
+        left: 0px;
+        display: flex;
+        height: 100%;
+        background: currentColor;
+    }
+
+
+    #navbarSupportedContent ul li {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #navbarSupportedContent ul li a {
+        padding: 20px 60px !important;
+    }
+
+    /* .navbar-expand-lg .navbar-nav {
+        flex-direction: row !important;
+    } */
 }
 
 /* s */
 @media only screen and (min-width:576px) {
     .header-container {
         margin-bottom: 40px;
+    }
+
+    #about .content-left p {
+        width: 100%;
+    }
+
+    .covid-spreed .cards-row {
+        justify-content: center;
+    }
+
+    .covid-spreed .cards-row .card {
+        width: 23rem !important;
+    }
+
+    .button-row .btn a,
+    .button-row .btn i {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+    }
+
+    .symptoms .symptoms-h4,
+    .prevention .prevention-h4 {
+        font-size: 1.2rem !important;
+    }
+
+    .symptoms .cards-row,
+    .prevention .cards-row {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .symptoms .cards-row .card {
+        width: 80% !important;
+        margin-bottom: 50px;
+    }
+
+    .symptoms p.section-p,
+    .prevention p.section-p {
+        width: 100% !important;
+    }
+
+    .symptoms .symptoms-warning-button {
+        margin: 15px 0;
+    }
+
+    .prevention .cards-row .card-img-top {
+        width: 40% !important;
+    }
+
+    .prevention-buttons .prevention-button,
+    .prevention-buttons .prevention-link {
+        justify-content: center !important;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .treatment .content-left {
+        margin-bottom: 20px;
+    }
+
+    /* .protect-yourself-content .instructions .item{
+        justify-content: center;
+    } */
+    .faq .list-items {
+        margin-bottom: 15px;
+    }
+
+    .footer .list-links .item {
+        margin-bottom: 25px;
     }
 }
