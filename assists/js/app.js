@@ -40,3 +40,23 @@ function scrollToTop(){
 //         }
 //     });
 // }
+
+// Swap 
+function swap(e)
+{
+    var id = e.id;
+    const sectionLi = document.querySelectorAll('.accordion-card');
+    const accordionLi = document.querySelectorAll('.accordion-list');
+    accordionLi.forEach((accord) => {
+      accord.classList.remove('border-color-focus');
+    });
+    sectionLi.forEach((section) =>{
+        section.classList.remove('active-accordion');
+        if (section.classList.contains(id))
+        {
+            section.classList.add('active-accordion');
+            document.querySelector('#'+id).classList.add('border-color-focus');
+        }
+     } );
+  
+}
